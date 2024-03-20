@@ -1,0 +1,56 @@
+<style>
+    .overlay {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.8;
+        z-index: 1;
+        display: none;
+    }
+    .popupbox {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    border: solid rgb(5, 141, 253) 10px;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(243, 42, 109);
+    color: black;
+    font-size: 23px;
+    font-weight: 50;
+    width: 40%;
+    padding: 20px;
+    border-radius: 50px;
+    display: none;
+    }
+</style>
+
+<link rel="stylesheet" href="hapybday.css">
+<div class="love"><button onclick="show()" class="button">H🅰️🅿️🅿️Y B🎂D🅰️Y Dear💝!</button></div>
+
+<div class="overlay"></div>
+<div class="popupbox">
+    <p>Happy Birthday!🎉May your special day be filled with sunshine🌞and warmth, just like the radiance you bring into
+        the lives of those around you👩‍👩‍👧‍👦. As you embark on another journey🏇🏼around the sun☀️, may you be
+        blessed with the greatest joys💌and everlasting bliss💞. You are a beacon of light💫in this world🌏, illuminating the path for
+        others with your kindness💝, compassion💖, and unwavering positivity❤️.</p>
+    <button onclick="closepopup()" class="addbutton">Close</button>
+</div>
+
+<script>
+    var popupoverlay = document.querySelector(".overlay")
+    var popupbox = document.querySelector(".Popupbox")
+    function show() {
+        popupbox.style.display = "block"
+        popupoverlay.style.display = "block"
+    }
+    function closepopup() {
+        popupbox.style.display = "none"
+        popupoverlay.style.display = "none"
+    }
+</script>
